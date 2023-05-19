@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+body {
+  background: black;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+#app {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  margin: 11.5rem 0 8.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search input {
+  height: 4.8rem;
+  width: 46.2rem; 
+  padding: 1.6rem;
+
+  border: 0;
+
+  background: #06181C;
+  border-radius: 5px;
+
+  font-size: 1.6rem;
+  line-height: 100%;
+  color: #7C7C8A;
+}
+
+.search button {
+  height: 4.8rem;
+  padding: 1.2rem 3.2rem;
+  border: 0;
+  
+  background: #065E7C;
+  border-radius: 5px;
+  
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 112rem;
+
+  border: 1px solid #4A808C;
+}
+
+thead{
+  background: #092D38;
+  text-align: left;
+}
+
+thead tr th:first-child{
+  border-top-left-radius: 1.2rem;
+}
+thead tr th:last-child{
+  border-top-right-radius: 1.2rem;
+}
+
+thead th{
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+  
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+  color: #E1E1E6;
+}
