@@ -98,11 +98,11 @@ header {
 table {
   border-spacing: 0px;
   width: 112rem;
-
   border: 1px solid #4A808C;
   border-radius: 1.2rem;
-}
+  background: #050f10;
 
+}
 thead{
   background: #092D38;
   text-align: left;
@@ -110,7 +110,9 @@ thead{
 
 thead tr th:first-child{
   border-top-left-radius: 1.2rem;
+  width: 50.4rem;
 }
+
 thead tr th:last-child{
   border-top-right-radius: 1.2rem;
 }
@@ -128,18 +130,12 @@ table * {
   color: #E1E1E6;
 }
 
-tbody tr {
-
-}
-
 tbody tr:nth-child(even) {
   background: #06181C;
-  
 }
 
 tbody tr:nth-child(odd) {
   background: rgba(6, 22, 27, 0.5);
-
 }
 
 tbody tr td{
@@ -148,6 +144,7 @@ tbody tr td{
   font-size: 2rem;
   line-height: 160%;
   border-bottom: 1px solid #4A808C;
+
 }
 
 tbody tr:last-child td{
@@ -174,10 +171,48 @@ span {
   text-decoration: none;
 }
 
-
-
 .remove {
   color: #F75A68;
 
   cursor: pointer;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: -5rem;
+
+  height: 64rem;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 6rem;
+}
+
+.empty p {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: #4E5455;
+}
+
+.empty img {
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.first {
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+tbody {
+  display: block;
+  max-height: 50rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }
