@@ -80,6 +80,19 @@ header {
   text-transform: uppercase;
   
   color: white;
+
+  cursor: pointer;
+
+  transition: all .3s;
+}
+
+.search button:hover {
+  background: #FFFFFF;
+  color: #065E7C;
+}
+
+.search button:hover svg path {
+  fill: #065E7C;
 }
   
 table {
@@ -109,4 +122,62 @@ thead th{
   font-size: 2rem;
   line-height: 160%;
   color: #E1E1E6;
+}
+
+table * {
+  color: #E1E1E6;
+}
+
+tbody tr {
+
+}
+
+tbody tr:nth-child(even) {
+  background: #06181C;
+  
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+
+}
+
+tbody tr td{
+  padding: 2.4rem 4rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+  border-bottom: 1px solid #4A808C;
+}
+
+tbody tr:last-child td{
+  border-bottom: none;
+}
+
+span {
+  font-weight: 400;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+.user a {
+  text-decoration: none;
+}
+
+
+
+.remove {
+  color: #F75A68;
+
+  cursor: pointer;
 }
