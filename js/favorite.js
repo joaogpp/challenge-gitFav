@@ -64,7 +64,7 @@ export class FavoritesView extends Favorites {
   }
   
   update() {
-      this.removeAllTr()
+      this.removeAllTr() 
 
       if(this.entries.length == 0) {
       const tr = document.createElement(`tr`)
@@ -108,12 +108,14 @@ export class FavoritesView extends Favorites {
     const tr = document.createElement('tr')
 
     tr.innerHTML = `
-      <td class="user">
-        <img src="https://www.github.com/diego3g.png" alt="">
+      <td colspan="3">
+        <div class="user">
+          <img src="https://www.github.com/diego3g.png" alt="">
           <a href="">
             <p>Diego Fernandes</p>
             <span>/diego3g</span>
           </a>
+        </div>
       </td>
       <td class="repositories">
         123
@@ -124,7 +126,7 @@ export class FavoritesView extends Favorites {
       <td class="remove">
         Remover
       </td>`
-      
+    
       return tr
   }
 
